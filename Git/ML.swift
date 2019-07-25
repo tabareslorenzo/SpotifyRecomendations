@@ -48,8 +48,7 @@ class MLmodel{
         catch{
             print("kmeans error")
         }
-        let center = kmeans.centroids[0]
-        
+//        let center = kmeans.centroids[0]
     }
     func predict(Data: [[Double]]) -> Bool{
         var MLData : MLClassificationDataSet  = convertData(Auddata: self.Audiodata)

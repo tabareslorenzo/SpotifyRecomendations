@@ -1,24 +1,28 @@
 PODS:
-  - Alamofire (4.7.3)
+  - Alamofire (4.8.0)
   - FutureKit (3.5.0)
+  - SpotifyLogin (0.1.6)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - FutureKit
+  - SpotifyLogin (~> 0.1)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - FutureKit
+    - SpotifyLogin
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   FutureKit: 91f6760df942278db387b05f19a9fdfbeb097df2
+  SpotifyLogin: 9cdf82ff13e5f37e5ddc7fd07cf9793a9ebd1124
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 3950e2fad945b057815258fcc6fedbdf521518a9
+PODFILE CHECKSUM: b0bfb6ac8d60382d2e1bdca3c4f8329d070dad27
 
 COCOAPODS: 1.5.3

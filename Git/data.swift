@@ -25,9 +25,8 @@ class data{
 
     func main()
     {
-        let token = "BQBPjluqSSiHO3Gcf_eVcBj_0LO7tRgy5AI289t6YtJwIvnoRlBfoOkDKWeNseTI3NnofF3Kr_p81vfd5sqdJAEtP_pzb3YxZW2n7ObYvuDqHGXP1uSr8JtzkVJd33xdrJDemZEgOE9bBgUJGCU"
+        let token = "BQA5hkrilE7f60Bhe2P9iUmDk8Jw_jyMXC_c1l1VjaUut7yuFcfgZcYqGLy9-HCTBHYFOeXUOB700e6ef1kK_4u08HTHjq3z45f5ZBJkjOtP_w6EDTor-qIr6lO13o6qJr4_6sXzzvtKDyu1nmU"
         //    #########
-        
         let artistID = "3TVXtAsR1Inumwj472S9r4" //Drake
         
         let header: HTTPHeaders  = ["Authorization" : "Bearer " + token]
@@ -297,9 +296,10 @@ func getAudioFeatures(artist: Artist, track: Track, header: HTTPHeaders)->Void{
         track.Features.nparray = [acousticness, danceability, energy, instrumentalness, liveness, speechiness, tempo, valence]
         artist.listOfTrack.append(track)
         listAudiofeatures.append([acousticness, danceability, energy, instrumentalness, liveness, speechiness, tempo, valence])
-        let ML : MLmodel = MLmodel(Audiodata: [track.Features.nparray], clusters: 1)
+        let ML : MLmodel = MLmodel(Audiodata: [track.Features.nparray], clusters: 1)//2d with playlist audio features
         ML.createmodel()
-        ML.predict(Data: [track.Features.nparray])
+        ML.predict(Data: [track.Features.nparray]) //2d array of 1 element
+        
 
     }
     

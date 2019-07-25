@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18ADC27E3CFE65EF148583AD33334E83"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "005BCFD163DEA186259F88CD0BA39760"
+               BlueprintName = "SpotifyLogin"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyJSON.framework">
+               BuildableName = "SpotifyLogin.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
